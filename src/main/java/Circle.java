@@ -5,15 +5,19 @@ public class Circle extends Point{
     private final double radius;
     private final Point center;
 
-    public Circle(Point point, double radius){
+    Circle(Point point, double radius){
         this.center = point;
         this.radius = radius;
     }
     public Point getCenter(){
         return center;
     }
-    public double getradius(){
+    public double getRadius(){
         return radius;
+    }
+    public double perimeter(){
+        double perm = 2*Math.PI*radius;
+        return perm;
     }
 
 
