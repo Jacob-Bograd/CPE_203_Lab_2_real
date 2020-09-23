@@ -45,7 +45,7 @@ public class PartOneTestCases
       final List<Class[]> expectedMethodParameters = Arrays.asList(
          new Class[0], new Class[0]);
 
-      verifyImplSpecifics(Rectangle.class, expectedMethodNames,
+     verifyImplSpecifics(Rectangle.class, expectedMethodNames,
          expectedMethodReturns, expectedMethodParameters);
    }
 
