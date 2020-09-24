@@ -10,8 +10,9 @@ public class Polygon {
         return points;
     }
     public double perimeter(){
-        double perm = Double.NaN;
-        for(int i = 0; i < points.size(); i++){
+        double perm = 0;
+        for(int i = 0; i < points.size() - 1; i++){
+            //System.out.println("DEBUG : I = " + i); // For DEBUG USE
             Point first = points.get(i);
             Point second = points.get(i+1);
             double firstx = first.getX();;
@@ -19,8 +20,12 @@ public class Polygon {
             double secondx = second.getX();;
             double secondy = second.getY();
             double first_side = Math.abs(secondx-firstx);
+         //    System.out.println("DEBUG : first_side = " + first_side); // For DEBUG USE
+
             double second_side = Math.abs(secondy-firsty);
-            perm = perm + first_side + second_side;
+          //  System.out.println("DEBUG : second_side = " + second_side); // For DEBUG USE
+            perm = first_side + second_side + perm;
+           // System.out.println(" DEBUG : Perm = " + perm); // For DEBUG USE
 
         }
         return perm;

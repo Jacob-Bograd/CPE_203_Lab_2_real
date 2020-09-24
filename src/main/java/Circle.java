@@ -5,7 +5,7 @@ public class Circle extends Point{
     private final double radius;
     private final Point center;
 
-    Circle(Point point, double radius){
+    public Circle(Point point, double radius){
         this.center = point;
         this.radius = radius;
     }

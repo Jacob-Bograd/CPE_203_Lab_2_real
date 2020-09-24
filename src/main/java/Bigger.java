@@ -21,6 +21,7 @@ public class Bigger {
         }
         else{
             System.out.println("SOMETHING VERY BAD WENT WRONG IN BIGGER.JAVA IN WHICH IS BIGGER");
+            System.out.println("CP =" + cp + " rp = " + rp + " pp = " + pp);
             return null;
         }
 
