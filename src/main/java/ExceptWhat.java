@@ -11,7 +11,7 @@ public class ExceptWhat
 
            }
        } catch(Exception e){
-           System.out.println("There is a EOFException");
+           System.out.println("Handled EOFException");
        }
    }
 
@@ -20,7 +20,7 @@ public class ExceptWhat
        try{
       throw new FileNotFoundException();
    } catch(Exception x){
-           System.out.println("there is a FileNotFoundException");
+           System.out.println("Handled the  FileNotFoundException");
        }
 
 }
@@ -33,18 +33,18 @@ public class ExceptWhat
    private static void intermediate3(boolean isBad)
    {
       // This method should not attempt to recover from any exceptions.
-      try
-      {
+//      try
+//      {
          exceptional(isBad);
          outstanding();
          fantastic();
-      }
-      catch (Exception e)
-      {
-         System.out.println(
-            String.format("intermediate 3 handled %s -- NOT SUPPOSED TO HAPPEN",
-            e));
-      }
+//      }
+//      catch (Exception e)
+//      {
+//         System.out.println(
+//            String.format("intermediate 3 handled %s",
+//            e));
+//      }
    }
 
    private static void intermediate2(boolean isBad)
